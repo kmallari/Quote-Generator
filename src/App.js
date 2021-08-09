@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import QuoteBox from "./QuoteBox";
+import "./App.css";
+import { bgStyle } from "./bgStyle";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={bgStyle} className="w-full h-screen">
+      <div className="flex justify-center item-center flex-col w-4/5 lg:w-1/2 m-auto pt-10 lg:pt-28 font-work-sans">
+        <QuoteBox />
+      </div>
     </div>
   );
 }
